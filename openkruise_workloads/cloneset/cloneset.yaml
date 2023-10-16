@@ -21,6 +21,7 @@ spec:
         ports:
         - name: http-server
           containerPort: 3000
+        command: ["exit", "1"] # Add the "exit 1" command here
   updateStrategy:
     type: InPlaceIfPossible
     maxUnavailable: 3
