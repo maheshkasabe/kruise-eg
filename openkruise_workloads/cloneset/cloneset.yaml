@@ -24,4 +24,5 @@ spec:
         command: ["exit", "1"] # Add the "exit 1" command here
   updateStrategy:
     type: InPlaceIfPossible
+    paused: true
     maxUnavailable: 3
